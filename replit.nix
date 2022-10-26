@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.nano
     pkgs.vim
     pkgs.python38Full
     pkgs.chromium
