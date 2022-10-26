@@ -129,4 +129,4 @@ link.click()
 1. Modifica el script para que abra la página en Wikipeda sobre Selenium
 2. Modifica el script para que abra la página web de tu organización
 3. Navega en forma automatizada la página web de tu organización
-4. ¿Puedes escribir un script para llenar el formulario de esta página: https://www.selenium.dev/selenium/web/web-form.html?
+4. ¿Puedes escribir un script para llenar gran aprte del formulario de esta página: https://www.selenium.dev/selenium/web/web-form.html?
