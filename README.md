@@ -40,7 +40,7 @@ pkgs.chromedriver
 Para editar este archivo deben usar la shell de replit e instalar `nano` o `vim`.
 
 
-# Paso 1:
+# Paso 1
 
 Crear un archivo `main.py` que contenga lo siguiente:
 
@@ -59,5 +59,32 @@ driver.get("https:/google.com")
 ```
 
 Luego ejecutar presionando el botón `> Run`, debería abrir la página de `google.com`.
+
+# Paso 2
+
+Agrega estas lineas a `main.py`
+
+```
+## Encontrar Elementos
+
+google_text = driver.find_element(By.CLASS_NAME, "MV3Tnb").text
+
+print(google_text)
+
+input_box = driver.find_element(By.NAME, "q")
+
+input_box.send_keys("selenium")
+
+input_box.send_keys(Keys.ENTER)
+```
+
+Presiona `> Run` y observa que ocurre.
+
+Prueba cambiando `"selenium"` por otros valores.
+
+
+
+
+
 
 
