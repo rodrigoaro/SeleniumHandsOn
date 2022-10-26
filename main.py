@@ -22,3 +22,30 @@ input_box = driver.find_element(By.NAME, "q")
 input_box.send_keys("selenium")
 
 input_box.send_keys(Keys.ENTER)
+
+## Pausa de 5 segundos
+
+import time
+
+print('esperaremos 5 segundos' )
+time.sleep(5)
+
+## Volvemos a la home page
+
+home_link = driver.find_element(By.ID, "logo")
+
+home_link.click()
+
+## Buscar
+
+input_box = driver.find_element(By.NAME, "q")
+
+input_box.send_keys("selenium")
+
+input_box.send_keys(Keys.ENTER)
+
+link = driver.find_element(By.PARTIAL_LINK_TEXT, "Selenium")
+
+print(link.text)
+
+link.click()

@@ -82,9 +82,51 @@ Presiona `> Run` y observa que ocurre.
 
 Prueba cambiando `"selenium"` por otros valores.
 
+# Paso 3
 
+Agrega estas lineas a `main.py`
 
+```
+## Pausa de 5 segundos
 
+import time
 
+print('esperaremos 5 segundos' )
+time.sleep(5)
 
+## Volvemos a la home page
 
+home_link = driver.find_element(By.ID, "logo")
+
+home_link.click()
+
+```
+
+Observa que pasa después de presionar `> Run`.
+
+# Paso 4
+
+Agrega estas lineas a `main.py` y ejecutalas presionando `> Run`
+
+```
+## Buscar
+
+input_box = driver.find_element(By.NAME, "q")
+
+input_box.send_keys("selenium")
+
+input_box.send_keys(Keys.ENTER)
+
+link = driver.find_element(By.PARTIAL_LINK_TEXT, "Selenium")
+
+print(link.text)
+
+link.click()
+```
+
+## Ejercicios
+
+1. Modifica el script para que abra la página en Wikipeda sobre Selenium
+2. Modifica el script para que abra la página web de tu organización
+3. Navega en forma automatizada la página web de tu organización
+4. ¿Puedes escribir un script para llenar el formulario de esta página: https://www.selenium.dev/selenium/web/web-form.html?
